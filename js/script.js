@@ -2,6 +2,7 @@ const diceInput = document.getElementById("numOfDice");
 const rollButton = document.getElementById("button");
 const diceResult = document.getElementById("diceResult");
 const diceImages = document.getElementById("diceImages");
+const wait = document.querySelector(".wait");
 const images = [];
 const dice = [];
 
@@ -16,7 +17,14 @@ function handleClick() {
 
   diceResult.textContent = `Dice rolled: ${dice.join(", ")}`;
   diceImages.innerHTML = images.join(" ");
-  return;
+
+  if (dice[0] === 6 && dice[1] === 6) {
+    wait.textContent = "Wait for it!😉";
+    rollButton.removeEventListener("click", handleClick);
+    setTimeout(function redirect() {
+      location.replace("https://www.youtube.com/watch?v=YVDKnQLz0bk");
+    }, 2000);
+  }
 }
 
 rollButton.addEventListener("click", handleClick);
