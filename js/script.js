@@ -21,17 +21,21 @@ function handleClick() {
   if (dice[0] === 6 && dice[1] === 6) {
     wait.textContent = "Wait for it!😉";
     rollButton.removeEventListener("click", handleClick);
-    setTimeout(function redirect() {
-      location.replace("https://www.youtube.com/watch?v=YVDKnQLz0bk");
-    }, 2000);
+    const instance = basicLightbox.create(`
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T0o8WiHy6L4?si=bZAzRdkwe2evt4K-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+`);
+
+    instance.show();
   }
 
   if (dice[0] === 6 && dice[1] === 5) {
     wait.textContent = "Wait for it!🎲";
     rollButton.removeEventListener("click", handleClick);
-    setTimeout(function redirect() {
-      location.replace("https://www.youtube.com/watch?v=3v13fH71lkk");
-    }, 2000);
+    const instance = basicLightbox.create(`
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3v13fH71lkk?si=4odh3JHatGrCDQYj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  `);
+
+    instance.show();
   }
 }
 
