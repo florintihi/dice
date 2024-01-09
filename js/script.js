@@ -22,7 +22,7 @@ function handleClick() {
     wait.textContent = "Wait for it!😉";
     rollButton.removeEventListener("click", handleClick);
     const instance = basicLightbox.create(`
-     <iframe src="https://www.youtube.com/embed/T0o8WiHy6L4?si=bZAzRdkwe2evt4K-" width="560" height="315" frameborder="0" allow="autoplay"></iframe>
+     <iframe src="https://www.youtube.com/embed/T0o8WiHy6L4?autoplay=1" width="560" height="315" frameborder="0" allow="autoplay"></iframe>
 `);
 
     setTimeout(() => {
@@ -34,7 +34,7 @@ function handleClick() {
     wait.textContent = "Wait for it!🎲";
     rollButton.removeEventListener("click", handleClick);
     const instance = basicLightbox.create(`
-      <iframe src="https://www.youtube.com/embed/3v13fH71lkk?si=4odh3JHatGrCDQYj" width="560" height="315" frameborder="0" allow="autoplay"></iframe>
+      <iframe src="https://www.youtube.com/embed/3v13fH71lkk?autoplay=1" width="560" height="315" frameborder="0" allow="autoplay"></iframe>
 `);
     setTimeout(() => {
       instance.show();
