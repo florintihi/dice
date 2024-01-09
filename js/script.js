@@ -22,7 +22,7 @@ function handleClick() {
     wait.textContent = "Wait for it!😉";
     rollButton.removeEventListener("click", handleClick);
     const instance = basicLightbox.create(`
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/T0o8WiHy6L4?si=bZAzRdkwe2evt4K-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <iframe src="https://www.youtube.com/embed/T0o8WiHy6L4?si=bZAzRdkwe2evt4K-" width="560" height="315" frameborder="0" autoplay></iframe>
 `);
 
     instance.show();
@@ -32,9 +32,8 @@ function handleClick() {
     wait.textContent = "Wait for it!🎲";
     rollButton.removeEventListener("click", handleClick);
     const instance = basicLightbox.create(`
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/3v13fH71lkk?si=4odh3JHatGrCDQYj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  `);
-
+      <iframe src="https://www.youtube.com/embed/3v13fH71lkk?si=4odh3JHatGrCDQYj" width="560" height="315" frameborder="0" autoplay></iframe>
+`);
     instance.show();
   }
 }
