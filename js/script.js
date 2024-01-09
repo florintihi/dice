@@ -9,6 +9,11 @@ const dice = [];
 function handleClick() {
   dice.length = 0;
   images.length = 0;
+  if (diceInput.value === "" || diceInput.value < 1) {
+    diceResult.textContent =
+      "Enter in the input above how many dice you want to roll!";
+    return;
+  }
   for (let i = 0; i < diceInput.value; i++) {
     const value = Math.floor(Math.random() * 6) + 1;
     dice.push(value);
