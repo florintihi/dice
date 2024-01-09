@@ -25,7 +25,9 @@ function handleClick() {
      <iframe src="https://www.youtube.com/embed/T0o8WiHy6L4?si=bZAzRdkwe2evt4K-" width="560" height="315" frameborder="0" autoplay></iframe>
 `);
 
-    instance.show();
+    setTimeout(() => {
+      instance.show();
+    }, 1000);
   }
 
   if (dice[0] === 6 && dice[1] === 5) {
@@ -34,7 +36,9 @@ function handleClick() {
     const instance = basicLightbox.create(`
       <iframe src="https://www.youtube.com/embed/3v13fH71lkk?si=4odh3JHatGrCDQYj" width="560" height="315" frameborder="0" autoplay></iframe>
 `);
-    instance.show();
+    setTimeout(() => {
+      instance.show();
+    }, 1000);
   }
 }
 
